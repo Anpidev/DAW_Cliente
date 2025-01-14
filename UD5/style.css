@@ -1,15 +1,31 @@
-#form{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*100 hv hace que ocupe todo la altura del navegador*/
+  height: 100vh;
+  margin: 0;
+}
 
- 
+#form {
+  display: block;
+  width: 500px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .focus{
-    background-color: blueviolet;
-  }
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
 
- 
+.focus {
+  background-color: rgb(178, 134, 219);
+  color: white;
+  font-weight: bold;
+}
