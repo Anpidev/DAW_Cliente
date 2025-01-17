@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ciudad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string" />
+        <xs:element name="poblacion" type="xs:unsignedInt" />
+        <xs:element name="pais" type="xs:string" />
+        <xs:element name="alcalde" type="xs:string" />
+        <xs:element name="coordenadasgps">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="latitud" type="xs:decimal" />
+              <xs:element name="longitud" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fotografias">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="fotografia">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string" />
+                    <xs:element name="descripcion" type="xs:string" />
+                    <xs:element name="url" type="xs:string" />
+                    <xs:element name="escapital" type="xs:string" />
+                    <xs:element minOccurs="0" name="atracciones">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="atraccion">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="nombre" type="xs:string" />
+                                <xs:element name="descripcion" type="xs:string" />
+                                <xs:element name="urlfotografia" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

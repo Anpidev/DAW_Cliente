@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+<!-- Ciudad definition -->
+<!ELEMENT ciudad (nombre,poblacion,pais,alcalde,coordenadasgps,fotografias+)>
+<!ATTLIST ciudad
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+>
+
+<!-- Elements definition -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT alcalde (#PCDATA)>
+<!ELEMENT coordenadasgps (latitud, longitud)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+
+<!-- Fotografias section -->
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (nombre, descripcion, url, escapital, atracciones?)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT escapital (#PCDATA)>
+<!ELEMENT atracciones (atraccion*)>
+<!ELEMENT atraccion (nombre, descripcion, urlfotografia+)>
+<!ELEMENT urlfotografia (#PCDATA)>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ud6.xsd">
+    <nombre>malaga</nombre>
+    <poblacion>578460</poblacion>
+    <pais>espana</pais>
+    <alcalde>francisco de la torre</alcalde>
+    <coordenadasgps>
+        <latitud>36.7213</latitud>
+        <longitud>-4.4214</longitud>
+    </coordenadasgps>
+    <fotografias>
+        <fotografia>
+            <nombre>malaga_alcazaba</nombre>
+            <descripcion>vista de la alcazaba de malaga</descripcion>
+            <url>https://multimedia.andalucia.org/content_images/main_image_42990.jpeg</url>
+            <escapital>si</escapital>
+            <atracciones>
+                <atraccion>
+                    <nombre>alcazaba de malaga</nombre>
+                    <descripcion>fortaleza histórica de malaga</descripcion>
+                    <urlfotografia>https://multimedia.andalucia.org/fotos/image_103937.jpeg</urlfotografia>
+                </atraccion>
+            </atracciones>
+        </fotografia>
+        <fotografia>
+            <nombre>malaga_catedral</nombre>
+            <descripcion>la catedral de malaga, conocida como la manquita</descripcion>
+            <url>https://multimedia.andalucia.org/content_images/main_image_43180.jpeg</url>
+            <escapital>si</escapital>
+        </fotografia>
+    </fotografias>
+</ciudad>
